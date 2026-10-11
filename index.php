@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . '/head.php';
 require_once __DIR__ . '/footer.php';
-require_once __DIR__ . '/about.php';
 require_once __DIR__ . '/data.php';
 ?>
 
