@@ -26,9 +26,10 @@ require_once __DIR__ . '/data.php';
             </ul>
             <!-- list of all the team logos: displayed in navbar horizontally (links?) -->
             <ul class="logoLinkList">
+                <?php $i = 1; ?>
                 <?php foreach ($teams as $key => $value): ?>
                     <li>
-                        <a>
+                        <a id="<?php echo $i; ?> " href=" <?php echo 'info.php?id=' . $i; ?> ">
                             <!-- If... else statement inside foreach-loop -> render team logo with a default img/logo -->
                             <?php if (file_exists($teams[$key]['logo'])): ?>
                                 <img src='<?= $teams[$key]['logo']; ?>' alt="team logo">
@@ -37,6 +38,7 @@ require_once __DIR__ . '/data.php';
                             <?php endif; ?>
                         </a>
                     </li>
+                    <?php $i++; ?>
                 <?php endforeach; ?>
             </ul>
         </nav>
