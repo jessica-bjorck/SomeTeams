@@ -23,7 +23,7 @@ require_once __DIR__ . '/data.php';
                     <?php echo $key; ?>
                 </h2>
             <li>
-                <a id="<?php echo $i; ?> " href=" <?php echo 'index.php?id=' . $i; ?> ">
+                <a id="<?php echo $i; ?> " href=" <?php echo 'info.php?id=' . $i; ?> ">
             </li>
             <!-- If... else statement inside foreach-loop -> render team logo with a default img/logo -->
             <?php if (file_exists($teams[$key]['logo'])): ?>
