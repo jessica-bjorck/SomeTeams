@@ -2,7 +2,6 @@
 require_once __DIR__ . '/head.php';
 require_once __DIR__ . '/footer.php';
 require_once __DIR__ . '/data.php';
-
 ?>
 
 <section>
@@ -12,11 +11,7 @@ require_once __DIR__ . '/data.php';
         <?php if ($i == $id): ?>
             <header class='subHeader'>
                 <h1><?= $key; ?></h1>
-                <?php if (file_exists($teams[$key]['logo']) && $i == $id): ?>
-                    <img src='<?= $teams[$key]['logo']; ?>' alt="team logo">
-                <?php else: ?>
-                    <img src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
-                <?php endif; ?>
+                <img src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
             </header>
             <ul class='teamInfo'>
                 <li> <?php echo 'League' . ': ' . $teams[$key]['league']; ?> </li>
