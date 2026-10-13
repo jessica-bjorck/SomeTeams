@@ -22,7 +22,7 @@ require_once __DIR__ . '/aboutData.php';
                 <li>
                     <?= $key . ' ' . $value; ?>
                 </li>
-            <?php elseif (is_array($value)): ?>
+            <?php else: (is_array($value)); ?>
                 <li>
                     <?= $key . ' '; ?>
                 </li>
