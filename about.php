@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/head.php';
+require_once __DIR__ . '/footer.php';
 
 $facts = [
     'name' => "Jessica Björck",
@@ -18,9 +20,6 @@ $facts = [
         "djur (verkliga och mjukisbaserade)"
     ],
 ];
-
-require_once __DIR__ . '/head.php';
-require_once __DIR__ . '/footer.php';
 ?>
 
 <h1>About</h1>
@@ -32,6 +31,8 @@ require_once __DIR__ . '/footer.php';
         <img src="/images/profilbild.jpg" />
         <figcaption>Självporträtt</figcaption>
     </figure>
+
+    <!-- List-foundation for iterating info from an array with about-facts to render on the page -->
     <ul>
         <li>
             <h2></h2>
