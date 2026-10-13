@@ -1,4 +1,24 @@
 <?php
+
+$facts = [
+    'name' => "Jessica Björck",
+    'ålder' => 32,
+    'bosatt i' => "Göteborg",
+    'utbildning' => [
+        "Dans",
+        "Konst",
+        "Webbutvecklare (pågående)"
+    ],
+    'intressen' => [
+        "Doctor Who",
+        "pussla",
+        "lösa soduko",
+        "Stormlight Archive (Cosmere universe)",
+        "Slay the Spire",
+        "djur (verkliga och mjukisbaserade)"
+    ],
+];
+
 require_once __DIR__ . '/head.php';
 require_once __DIR__ . '/footer.php';
 ?>
@@ -14,28 +34,12 @@ require_once __DIR__ . '/footer.php';
     </figure>
     <ul>
         <li>
-            <h2>Namn: </h2> Jessica Björck
+            <h2></h2>
         </li>
         <li>
-            <h2>Ålder:</h2>
-        </li>
-        <li>
-            <h2>Utbildning:</h2>
-        </li>
-        <li>
-            <h2>Bor i:</h2>
-        </li>
-        <li>
-            <h2>Intressen:</h2>
             <ul>
-                <li>spel</li>
-                <li>doctor who</li>
-                <li></li>
-                <li></li>
-                <li></li>
                 <li></li>
             </ul>
         </li>
-
     </ul>
 </section>
