@@ -16,13 +16,18 @@ require_once __DIR__ . '/data.php';
     <!-- recurring header/navbar -->
     <header>
         <!-- container for title/logo, link back to homepage -->
-        <div class="navTitle">
-            <a href="index.php">Some Teams</a>
-        </div>
         <nav>
-            <ul class="navList">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
+            <ul class="navLinkList">
+                <li>
+                    <a href="index.php">Some Teams</a>
+                </li>
+                <li>
+
+                    <div class="navLinks">
+                        <a href="index.php">Home</a>
+                        <a href="about.php">About</a>
+                    </div>
+                </li>
             </ul>
             <!-- list of all the team logos: displayed in navbar horizontally (links?) -->
             <ul class="logoLinkList">
