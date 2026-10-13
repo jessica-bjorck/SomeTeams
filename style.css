@@ -43,8 +43,33 @@ section {
 .logoLinkList {
   display: flex;
   background-color: blueviolet;
+  flex: 1;
+  gap: 4px;
+  justify-content: space-between;
+  padding: 6px;
 }
 
 .logoLinkList img {
   width: 100%;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.navLinkList {
+  padding: 0;
+  display: flex;
+  min-width: 60px;
+  margin-right: 0;
+  margin-top: 0;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+h1,
+p {
+  color: white;
 }
