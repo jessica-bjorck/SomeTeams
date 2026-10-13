@@ -24,14 +24,8 @@ require_once __DIR__ . '/data.php';
                 </h2>
             <li>
                 <a id="<?php echo $i; ?> " href=" <?php echo 'info.php?id=' . $i; ?> ">
-            </li>
-            <!-- If... else statement inside foreach-loop -> render team logo with a default img/logo -->
-            <?php if (file_exists($teams[$key]['logo'])): ?>
-                <img src='<?= $teams[$key]['logo']; ?>' alt="team logo">
-            <?php else: ?>
-                <img src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
-            <?php endif; ?>
-            </a>
+                    <img src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
+                </a>
             </li>
         </ul>
         <?php $i++; ?>
