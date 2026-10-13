@@ -27,6 +27,14 @@ require_once __DIR__ . '/footer.php';
         </li>
         <li>
             <h2>Intressen:</h2>
+            <ul>
+                <li>spel</li>
+                <li>doctor who</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </li>
 
     </ul>
