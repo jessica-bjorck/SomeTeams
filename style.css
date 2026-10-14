@@ -78,6 +78,11 @@ header {
   background-color: var(--white);
   border-radius: 100px;
   padding: 2px;
+  box-shadow: 1px 1px 3px var(--accent-blue);
+}
+
+.logoLinkList img:hover {
+  box-shadow: 0px 0px 10px var(--black);
 }
 
 /* Style appearance of container-list for navigational text-links and relation to eachother */
@@ -160,12 +165,13 @@ article {
 .teamsContainer {
   display: grid;
   grid-template-columns: repeat(4, minmax(140px, 1fr));
-  gap: 16px;
+  gap: 20px;
   grid-template-rows: repeat(4, 1fr);
   width: 90%;
   margin-inline: 60px;
 }
 
+/* list/container presenting each team */
 .teamItem {
   padding: 6px;
   display: flex;
@@ -175,6 +181,11 @@ article {
   background-color: var(--white);
   border-radius: 15px;
   padding: 30px 20px;
+  box-shadow: 2px 1px 6px var(--nav-purple);
+}
+
+.teamItem:hover {
+  box-shadow: 0.5px 0.5px 10px var(--accent-red);
 }
 
 .teamItem h2 {
