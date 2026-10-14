@@ -201,3 +201,27 @@ article {
   background-color: var(--accent-blue);
   padding: 10px;
 }
+
+/* teaminfo-list in section on info.php */
+/* img on info.php, different size than in the other subheaders */
+.infoImage {
+  width: 350px;
+}
+
+/* style unordered list */
+.teamInfoList {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-block: 20px;
+  background-color: var(--white);
+  border-inline: solid 8px var(--accent-red);
+  margin-inline: 18%;
+}
+
+.teamInfoContainer .subHeader {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-inline: 18%;
+  border-inline: solid 8px var(--accent-red);
+}
