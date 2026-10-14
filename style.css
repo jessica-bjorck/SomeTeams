@@ -42,7 +42,20 @@ body {
 /* common styling headings */
 h1,
 h2 {
-  color: var(--accent-red);
+  color: var(--accent-blue);
+}
+
+h1 {
+  font-size: calc(64rem / 16);
+}
+
+h2 {
+  font-size: calc(38rem / 16);
+}
+
+p {
+  font-size: calc(20rem / 16);
+  color: var(--darkblue);
 }
 
 /* Nav-bar, same on every page */
