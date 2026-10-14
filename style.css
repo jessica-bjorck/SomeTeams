@@ -201,3 +201,44 @@ article {
   background-color: var(--accent-blue);
   padding: 10px;
 }
+
+/* teaminfo-list in section on info.php */
+/* img on info.php, different size than in the other subheaders */
+.infoImage {
+  width: 350px;
+}
+
+/* style unordered list */
+.teamInfoList {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 40px 20px;
+  background-color: var(--white);
+  border-inline: solid 6px var(--accent-blue);
+  margin-inline: 18%;
+}
+
+.teamInfoList li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: calc(20rem / 16);
+  font-weight: 500;
+  line-height: 140%;
+  margin-left: 20px;
+}
+
+strong {
+  color: var(--darkblue);
+  font-size: calc(22rem / 16);
+}
+
+.teamInfoContainer .subHeader {
+  margin-block: 0;
+  margin-inline: 18%;
+  border-inline: solid 6px var(--nav-blue);
+  background-color: var(--bg-light);
+}
+
+.teamInfoContainer {
+  background-color: var(--white);
+}
