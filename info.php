@@ -14,10 +14,10 @@ require_once __DIR__ . '/data.php';
                 <img class="infoImage " src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
             </div>
             <ul class='teamInfoList'>
-                <li> <?php echo 'League' . ': ' . $teams[$key]['league']; ?> </li>
-                <li> <?php echo 'Uefa Coefficient Ranking' . ': ' . $teams[$key]['uefa-coefficient-ranking']; ?> </li>
-                <li> <?php echo 'League Position' . ': ' . $teams[$key]['league-position']; ?> </li>
-                <li> <?php echo 'City: ' . $teams[$key]['city']; ?> </li>
+                <li> <strong> <?= 'League' . ': '; ?> </strong> <?= $teams[$key]['league']; ?> </li>
+                <li> <strong> <?= 'Uefa Coefficient Ranking' . ': '; ?> </strong> <?= $teams[$key]['uefa-coefficient-ranking']; ?> </li>
+                <li> <strong> <?= 'League Position' . ': '; ?> </strong> <?= $teams[$key]['league-position']; ?> </li>
+                <li> <strong> <?= 'City: ' . ': '; ?> </strong> <?= $teams[$key]['city']; ?> </li>
             </ul>
         <?php endif; ?>
         <?php $i++; ?>
