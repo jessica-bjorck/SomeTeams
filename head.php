@@ -19,7 +19,7 @@ require_once __DIR__ . '/data.php';
         <nav>
             <ul class="navLinkList">
                 <li>
-                    <a href="index.php">Some Teams</a>
+                    <a id="titleLogo" href="index.php">Some Teams</a>
                 </li>
                 <li>
                     <div class="navLinks">
