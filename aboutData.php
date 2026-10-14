@@ -2,20 +2,20 @@
 // Array with listed data to about-page
 
 $facts = [
-    'name' => "Jessica Björck",
-    'ålder' => 32,
-    'bosatt i' => "Göteborg",
-    'utbildning' => [
+    'Name' => "Jessica Björck",
+    'Age' => 31,
+    'Based in' => "Göteborg",
+    'Education' => [
         "Dans",
-        "Konst",
-        "Webbutvecklare (pågående)"
+        "Fri Konst",
+        "Webbutvecklare (ongoing)"
     ],
-    'intressen' => [
+    'Hobbies' => [
         "Doctor Who",
-        "pussla",
-        "lösa soduko",
         "Stormlight Archive (Cosmere universe)",
         "Slay the Spire",
-        "djur (verkliga och mjukisbaserade)"
+        "knitting",
+        "soduko",
     ],
+    'Contact' => "jessica.bjorck@hotmail.com"
 ];
