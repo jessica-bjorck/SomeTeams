@@ -1,3 +1,12 @@
+/* color variables */
+:root {
+  --accent-blue: rgb(1, 1, 154);
+  --accent-red: rgb(233, 1, 1);
+  --bg-light: rgb(250, 226, 197);
+  --nav-accent-purple: rgb(138, 43, 226);
+  --nav-blue: rgb(32, 110, 255);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +16,12 @@ ul,
 body {
   margin: 0;
   list-style-type: none;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 /* styles to visually test html and php-code */
