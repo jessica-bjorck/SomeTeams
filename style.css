@@ -17,7 +17,9 @@
 
 /* Reset browser default values */
 ul,
-body {
+body,
+h1,
+h2 {
   margin: 0;
   list-style-type: none;
   font-size: 16px;
@@ -133,6 +135,15 @@ header {
   padding: 6px 16px;
   box-shadow: 2px 1px 4px var(--bg-light);
   border-radius: 10px;
+}
+
+/* style all subheaders */
+.subHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin-block: 20px;
 }
 
 /* Common styling article */
