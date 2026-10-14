@@ -8,7 +8,7 @@ require_once __DIR__ . '/data.php';
     <?php $id = filter_input(INPUT_GET, 'id'); ?>
     <?php $i = 1; ?>
     <?php foreach ($teams as $key => $value): ?>
-        <?php if ($i == $id): ?>
+        <?php if ($i === $id): ?>
             <div class='subHeader'>
                 <h1><?= $key; ?></h1>
                 <img src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
@@ -22,4 +22,5 @@ require_once __DIR__ . '/data.php';
         <?php endif; ?>
         <?php $i++; ?>
     <?php endforeach; ?>
+    <button>Back to homepage</button>
 </section>

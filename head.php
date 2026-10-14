@@ -22,7 +22,6 @@ require_once __DIR__ . '/data.php';
                     <a href="index.php">Some Teams</a>
                 </li>
                 <li>
-
                     <div class="navLinks">
                         <a href="index.php">Home</a>
                         <a href="about.php">About</a>
