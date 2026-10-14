@@ -16,6 +16,7 @@ $facts = [
         "Slay the Spire",
         "knitting",
         "soduko",
+        "lego"
     ],
     'Contact' => "jessica.bjorck@hotmail.com"
 ];
