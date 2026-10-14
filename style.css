@@ -37,7 +37,7 @@ body {
 /* common styling headings */
 h1,
 h2 {
-  color:;
+  color: var(--accent-red);
 }
 
 /* Nav-bar, same on every page */
