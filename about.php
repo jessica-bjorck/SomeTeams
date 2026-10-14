@@ -8,14 +8,15 @@ require_once __DIR__ . '/aboutData.php';
     <div class="subHeader">
         <h1>About</h1>
         <p>Introtext till sidan</p>
-    </div>
 
-    <section>
         <!-- container for image/portrait and a titel underneath -->
         <figure>
             <img src="/images/profilbild.jpg" />
             <figcaption>Självporträtt</figcaption>
         </figure>
+    </div>
+
+    <section class="factsContainer">
 
         <!-- List-foundation for iterating info from an array with about-facts to render on the page -->
         <ul class="factsList">
