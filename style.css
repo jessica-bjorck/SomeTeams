@@ -183,8 +183,10 @@ article {
   font-size: calc(32rem / 16);
   margin-bottom: 20px;
   height: 60px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .teamItem img {
   background-color: var(--accent-blue);
+  padding: 10px;
 }
