@@ -17,7 +17,9 @@
 
 /* Reset browser default values */
 ul,
-body {
+body,
+h1,
+h2 {
   margin: 0;
   list-style-type: none;
   font-size: 16px;
@@ -42,7 +44,16 @@ body {
 /* common styling headings */
 h1,
 h2 {
-  color: var(--accent-red);
+  color: var(--accent-blue);
+}
+
+h1 {
+  font-size: calc(64rem / 16);
+}
+
+p {
+  font-size: calc(20rem / 16);
+  color: var(--darkblue);
 }
 
 /* Nav-bar, same on every page */
@@ -67,6 +78,11 @@ header {
   background-color: var(--white);
   border-radius: 100px;
   padding: 2px;
+  box-shadow: 1px 1px 3px var(--accent-blue);
+}
+
+.logoLinkList img:hover {
+  box-shadow: 0px 0px 10px var(--black);
 }
 
 /* Style appearance of container-list for navigational text-links and relation to eachother */
@@ -122,18 +138,107 @@ header {
   border-radius: 10px;
 }
 
+/* style all subheaders */
+.subHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin-block: 20px;
+}
+
 /* Common styling article */
 /* section-styles shared by all sections */
 article,
 section {
-  width: 80%;
+  width: 85%;
   background-color: var(--bg-light);
 }
 
-/* section home-page */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* section home-page: gridlayout to display the teams */
 .teamsContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 20px;
   grid-template-rows: repeat(4, 1fr);
+  width: 90%;
+  margin-inline: 60px;
+}
+
+/* list/container presenting each team */
+.teamItem {
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 2px 1px 6px var(--nav-purple);
+}
+
+.teamItem:hover {
+  box-shadow: 0.5px 0.5px 10px var(--accent-red);
+}
+
+.teamItem h2 {
+  color: var(--black);
+  text-align: center;
+  font-size: calc(32rem / 16);
+  margin-bottom: 20px;
+  height: 60px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.teamItem img {
+  background-color: var(--accent-blue);
+  padding: 10px;
+}
+
+/* teaminfo-list in section on info.php */
+/* img on info.php, different size than in the other subheaders */
+.infoImage {
+  width: 350px;
+}
+
+/* style unordered list */
+.teamInfoList {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 40px 20px;
+  background-color: var(--white);
+  border-inline: solid 6px var(--accent-blue);
+  margin-inline: 18%;
+}
+
+.teamInfoList li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: calc(20rem / 16);
+  font-weight: 500;
+  line-height: 140%;
+  margin-left: 20px;
+}
+
+strong {
+  color: var(--darkblue);
+  font-size: calc(22rem / 16);
+}
+
+.teamInfoContainer .subHeader {
+  margin-block: 0;
+  margin-inline: 18%;
+  border-inline: solid 6px var(--nav-blue);
+  background-color: var(--bg-light);
+}
+
+.teamInfoContainer {
+  background-color: var(--white);
 }
