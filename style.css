@@ -1,7 +1,7 @@
 /* color variables */
 :root {
   --accent-blue: rgb(1, 1, 154);
-  --blue: rgb(37, 37, 150);
+  --bg-dark: rgb(37, 37, 150);
   --accent-red: rgb(233, 1, 1);
   --bg-light: rgb(250, 226, 197);
   --nav-accent-purple: rgb(148, 65, 226);
@@ -188,7 +188,7 @@ article {
   background-color: var(--white);
   border-radius: 15px;
   padding: 30px 20px;
-  box-shadow: 2px 1px 6px var(--nav-purple);
+  box-shadow: 2px 2px 10px var(--nav-purple);
 }
 
 .teamItem:hover {
@@ -222,23 +222,30 @@ article {
   display: flex;
   flex-direction: column;
   align-items: left;
-  padding: 40px 20px;
+  padding: 8px 20px;
   background-color: var(--white);
   border-inline: solid 6px var(--accent-blue);
   margin-inline: 18%;
+}
+.teamInfoList:last-child {
+  padding-bottom: 40px;
+}
+
+.teamInfoList:first-child {
+  padding-top: 40px;
 }
 
 .teamInfoList li {
   font-family: "Courier New", Courier, monospace;
   font-size: calc(20rem / 16);
   font-weight: 500;
-  line-height: 140%;
   margin-left: 20px;
 }
 
 strong {
   color: var(--darkblue);
   font-size: calc(22rem / 16);
+  text-transform: capitalize;
 }
 
 .teamInfoContainer .subHeader {

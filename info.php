@@ -13,12 +13,14 @@ require_once __DIR__ . '/data.php';
                 <h1><?= $key; ?></h1>
                 <img class="infoImage " src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
             </div>
-            <ul class='teamInfoList'>
-                <li> <strong> <?= 'League' . ': '; ?> </strong> <?= $teams[$key]['league']; ?> </li>
-                <li> <strong> <?= 'Uefa Coefficient Ranking' . ': '; ?> </strong> <?= $teams[$key]['uefa-coefficient-ranking']; ?> </li>
-                <li> <strong> <?= 'League Position' . ': '; ?> </strong> <?= $teams[$key]['league-position']; ?> </li>
-                <li> <strong> <?= 'City: ' . ': '; ?> </strong> <?= $teams[$key]['city']; ?> </li>
-            </ul>
+            <?php foreach ($value as $subKey => $subValue): ?>
+                <?php if (in_array($subKey, ['league', 'uefa-coefficient-ranking', 'league-position', 'city']) && $subValue != Null): ?>
+                    <ul class='teamInfoList'>
+                        <li> <strong> <?= $subKey; ?> </strong> <?= $subValue; ?> </li>
+                    </ul>
+                <?php else: continue; ?>
+                <?php endif; ?>
+            <?php endforeach; ?>
         <?php endif; ?>
         <?php $i++; ?>
     <?php endforeach; ?>
