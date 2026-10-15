@@ -17,11 +17,12 @@ require_once __DIR__ . '/data.php';
         <?php $i = 1; ?>
         <?php foreach ($teams as $key => $value): ?>
             <ul class="teamItem">
-                <li>
+                <li class="headingLi">
                     <!-- Heading: team name (retrieved from data.php)-->
                     <h2>
                         <?php echo $key; ?>
                     </h2>
+                </li>
                 <li>
                     <a id="<?php echo $i; ?> " href=" <?php echo 'info.php?id=' . $i; ?> ">
                         <img src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
