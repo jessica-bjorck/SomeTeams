@@ -23,15 +23,15 @@ require_once __DIR__ . '/aboutData.php';
             <?php foreach ($facts as $key => $value): ?>
                 <?php if (is_string($value) || is_int($value)): ?>
                     <li>
-                        <?= $key . ' ' . $value; ?>
+                        <strong> <?= $key . ': ' ?> </strong> <?= $value; ?>
                     </li>
                 <?php else: (is_array($value)); ?>
                     <li>
-                        <?= $key . ' '; ?>
+                        <strong> <?= $key . ': '; ?> </strong>
                     </li>
                     <li>
                         <?php foreach ($value as $nestedValues): ?>
-                            <ul>
+                            <ul class="nestedFactsList">
                                 <li><?= $nestedValues; ?> </li>
                             </ul>
                         <?php endforeach; ?>
