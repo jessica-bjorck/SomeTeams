@@ -7,8 +7,7 @@ require_once __DIR__ . '/aboutData.php';
     <!-- div as a subheader, page-specific content -->
     <div class="subHeader">
         <h1>About</h1>
-        <p>Introtext till sidan</p>
-
+        <p>I have done this site:</p>
     </div>
 
     <section class="factsContainer">

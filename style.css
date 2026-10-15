@@ -1,16 +1,17 @@
 /* color variables */
 :root {
   --accent-blue: rgb(1, 1, 154);
-  --bg-dark: rgb(37, 37, 150);
+  --bg-dark: rgb(46, 46, 145);
   --accent-red: rgb(233, 1, 1);
+  --darkred: rgb(129, 2, 2);
   --bg-light: rgb(250, 226, 197);
   --nav-accent-purple: rgb(148, 65, 226);
   --nav-purple: rgb(76, 18, 125);
-  --nav-blue: rgb(56, 123, 249);
+  --nav-blue: rgb(96, 144, 234);
   --darkblue: rgb(3, 3, 57);
   --white: rgb(250, 250, 250);
   --black: rgb(0, 0, 0);
-  --soft-white: rgb(255, 251, 247);
+  --soft-white: rgb(254, 245, 237);
 }
 
 * {
@@ -37,7 +38,7 @@ img {
 body {
   width: 100%;
   height: 100%;
-  background-color: var(--blue);
+  background-color: var(--bg-dark);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,7 +158,7 @@ header {
 /* section-styles shared by all sections */
 article,
 section {
-  width: 85%;
+  width: 88%;
   background-color: var(--bg-light);
 }
 
@@ -167,11 +168,33 @@ article {
   align-items: center;
 }
 
+.introParagraph {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: center;
+  font-size: calc(30rem / 16);
+  border-bottom: solid 4px var(--accent-blue);
+  padding-bottom: 20px;
+}
+
+.introParagraph strong {
+  font-size: calc(35rem / 16);
+  padding: 6px 16px;
+  border-radius: 10px;
+  color: var(--accent-red);
+}
+
+.introParagraph em {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: calc(20rem / 16);
+  background-color: var(--bg-light);
+}
+
 /* section home-page: gridlayout to display the teams */
 .teamsContainer {
   display: grid;
   grid-template-columns: repeat(4, minmax(140px, 1fr));
-  gap: 20px;
+  gap: 50px;
   grid-template-rows: repeat(4, 1fr);
   width: 90%;
   margin-inline: 60px;
@@ -180,34 +203,46 @@ article {
 
 /* list/container presenting each team */
 .teamItem {
-  padding: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--white);
+  background-color: var(--accent-blue);
   border-radius: 15px;
-  padding: 30px 20px;
+  padding: 4px;
   box-shadow: 2px 2px 10px var(--nav-purple);
+  gap: 10px;
 }
 
 .teamItem:hover {
-  box-shadow: 0.5px 0.5px 10px var(--accent-red);
+  box-shadow: 0.5px 0.5px 10px var(--soft-white);
 }
 
 .teamItem h2 {
-  color: var(--black);
+  color: var(--darkred);
   text-align: center;
-  font-size: calc(32rem / 16);
-  margin-bottom: 20px;
-  height: 60px;
+  font-size: calc(25rem / 16);
+  letter-spacing: -1px;
   font-family: "Courier New", Courier, monospace;
+  background-color: var(--white);
+  /* text-wrap: nowrap; */
+}
+
+.headingLi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--soft-white);
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .teamItem img {
-  background-color: var(--accent-blue);
+  background-color: var(--white);
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 100%;
 }
 
 /* teaminfo-list in section on info.php */
@@ -229,10 +264,6 @@ article {
 }
 .teamInfoList:last-child {
   padding-bottom: 40px;
-}
-
-.teamInfoList:first-child {
-  padding-top: 40px;
 }
 
 .teamInfoList li {
@@ -270,6 +301,12 @@ strong {
   border-inline: solid 6px var(--nav-blue);
   margin: 0;
   width: 88%;
+  position: relative;
+}
+
+.aboutArticle p {
+  position: absolute;
+  bottom: -18px;
 }
 
 .factsContainer {
