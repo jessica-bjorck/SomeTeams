@@ -168,6 +168,28 @@ article {
   align-items: center;
 }
 
+.introParagraph {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: center;
+  font-size: calc(30rem / 16);
+  border-bottom: solid 4px var(--accent-blue);
+  padding-bottom: 20px;
+}
+
+.introParagraph strong {
+  font-size: calc(35rem / 16);
+  padding: 6px 16px;
+  border-radius: 10px;
+  color: var(--accent-red);
+}
+
+.introParagraph em {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: calc(20rem / 16);
+  background-color: var(--bg-light);
+}
+
 /* section home-page: gridlayout to display the teams */
 .teamsContainer {
   display: grid;
@@ -181,7 +203,6 @@ article {
 
 /* list/container presenting each team */
 .teamItem {
-  padding: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;

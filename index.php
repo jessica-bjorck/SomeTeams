@@ -8,8 +8,8 @@ require_once __DIR__ . '/data.php';
     <div class="subHeader">
         <h1>Some teams</h1>
 
-        <p>INTRODUCING: <br />
-            the last 16 teams competing for the title <br />
+        <p class='introParagraph'>
+            <em> the last 16 teams competing for the title </em> <br />
             <strong> UEFA Women's Europa Cup 2026/2027 </strong>
         </p>
     </div>
