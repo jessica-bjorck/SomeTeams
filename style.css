@@ -242,3 +242,68 @@ strong {
 .teamInfoContainer {
   background-color: var(--white);
 }
+
+/* article about page */
+.aboutArticle {
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutArticle .subHeader {
+  border-inline: solid 6px var(--nav-blue);
+  margin: 0;
+  width: 88%;
+}
+
+.factsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--white);
+  padding-top: 40px;
+  padding-bottom: 60px;
+  border-inline: solid 6px var(--accent-blue);
+  width: 88%;
+}
+
+.factsList {
+  border-left: solid 2px var(--black);
+}
+
+.factsList,
+.nestedFactsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: calc(20rem / 16);
+}
+
+.factsList strong {
+  padding-right: 8px;
+  font-size: calc(24rem / 16);
+}
+
+.nestedFactsList li {
+  padding-left: 18px;
+  line-height: 120%;
+}
+
+/* container for self portrait */
+figure {
+  margin-top: 50px;
+}
+
+/* make text cursive underneath self portrait */
+figcaption {
+  font-style: italic;
+  padding-block: 10px;
+}
+
+figure img {
+  background-color: var(--bg-light);
+  padding-inline: 30px;
+  box-shadow: 0px 0px 8px var(--nav-purple);
+}
