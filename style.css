@@ -250,14 +250,23 @@ strong {
   flex-direction: column;
 }
 
+.aboutArticle .subHeader {
+  border-inline: solid 6px var(--nav-blue);
+  margin: 0;
+  width: 88%;
+}
+
 .factsContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   background-color: var(--white);
-  padding-block: 20px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  border-inline: solid 6px var(--accent-blue);
+  width: 88%;
 }
 
 .factsList {
@@ -273,7 +282,6 @@ figcaption {
 
 figure img {
   background-color: var(--bg-light);
-  border-inline: solid 4px var(--nav-purple);
   padding-inline: 30px;
-  box-shadow: 0px 0px 2px var(--nav-purple);
+  box-shadow: 0px 0px 8px var(--nav-purple);
 }
