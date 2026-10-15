@@ -1,4 +1,4 @@
-# SomeTeams
+# Some Teams
 
 ## About project
 This site lists the last 16 teams in UEAFA Women's Europa Cup, where you can read some relevant facts about each team. There is also an about page about me, the author.
