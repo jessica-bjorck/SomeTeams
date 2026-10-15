@@ -1,6 +1,7 @@
 /* color variables */
 :root {
   --accent-blue: rgb(1, 1, 154);
+  --blue: rgb(37, 37, 150);
   --accent-red: rgb(233, 1, 1);
   --bg-light: rgb(250, 226, 197);
   --nav-accent-purple: rgb(148, 65, 226);
@@ -9,6 +10,7 @@
   --darkblue: rgb(3, 3, 57);
   --white: rgb(250, 250, 250);
   --black: rgb(0, 0, 0);
+  --soft-white: rgb(255, 251, 247);
 }
 
 * {
@@ -35,7 +37,7 @@ img {
 body {
   width: 100%;
   height: 100%;
-  background-color: var(--accent-blue);
+  background-color: var(--blue);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,8 +49,12 @@ h2 {
   color: var(--accent-blue);
 }
 
+/* same font-fam as logo-text in nav */
 h1 {
   font-size: calc(64rem / 16);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: var(--soft-white);
+  border-radius: 40%;
 }
 
 p {
@@ -169,6 +175,7 @@ article {
   grid-template-rows: repeat(4, 1fr);
   width: 90%;
   margin-inline: 60px;
+  padding-bottom: 100px;
 }
 
 /* list/container presenting each team */
@@ -200,12 +207,14 @@ article {
 .teamItem img {
   background-color: var(--accent-blue);
   padding: 10px;
+  border-radius: 6px;
 }
 
 /* teaminfo-list in section on info.php */
 /* img on info.php, different size than in the other subheaders */
 .infoImage {
   width: 350px;
+  padding-top: 30px;
 }
 
 /* style unordered list */
@@ -240,7 +249,7 @@ strong {
 }
 
 .teamInfoContainer {
-  background-color: var(--white);
+  background-color: var(--soft-white);
 }
 
 /* article about page */
@@ -262,7 +271,7 @@ strong {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  background-color: var(--white);
+  background-color: var(--soft-white);
   padding-top: 40px;
   padding-bottom: 60px;
   border-inline: solid 6px var(--accent-blue);
