@@ -242,3 +242,20 @@ strong {
 .teamInfoContainer {
   background-color: var(--white);
 }
+
+/* article about page */
+.aboutArticle {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.factsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.factsList {
+  display: flex;
+  flex-direction: column;
+}
