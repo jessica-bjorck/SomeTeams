@@ -169,6 +169,7 @@ article {
   grid-template-rows: repeat(4, 1fr);
   width: 90%;
   margin-inline: 60px;
+  padding-bottom: 100px;
 }
 
 /* list/container presenting each team */
@@ -206,6 +207,7 @@ article {
 /* img on info.php, different size than in the other subheaders */
 .infoImage {
   width: 350px;
+  padding-top: 30px;
 }
 
 /* style unordered list */
