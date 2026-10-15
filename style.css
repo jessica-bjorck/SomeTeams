@@ -270,14 +270,36 @@ strong {
 }
 
 .factsList {
+  border-left: solid 2px var(--black);
+}
+
+.factsList,
+.nestedFactsList {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  font-size: calc(20rem / 16);
+}
+
+.factsList strong {
+  padding-right: 8px;
+  font-size: calc(24rem / 16);
+}
+
+.nestedFactsList li {
+  padding-left: 18px;
+  line-height: 120%;
+}
+
+/* container for self portrait */
+figure {
+  margin-top: 50px;
 }
 
 /* make text cursive underneath self portrait */
 figcaption {
   font-style: italic;
-  padding-block: 4px;
+  padding-block: 10px;
 }
 
 figure img {
