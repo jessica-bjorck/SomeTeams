@@ -10,13 +10,14 @@ $facts = [
         "Fri Konst",
         "Webbutvecklare (ongoing)"
     ],
-    'Hobbies' => [
+    'Things I like' => [
         "Doctor Who",
         "Stormlight Archive (Cosmere universe)",
         "Slay the Spire",
-        "knitting",
-        "soduko",
-        "lego"
+        "Knitting",
+        "Soduko",
+        "Lego",
+        "Animals"
     ],
     'Contact' => "jessica.bjorck@hotmail.com"
 ];

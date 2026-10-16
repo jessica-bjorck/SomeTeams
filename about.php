@@ -11,15 +11,16 @@ require_once __DIR__ . '/aboutData.php';
     </div>
 
     <section class="factsContainer">
-        <!-- container for image/portrait and a titel underneath -->
+        <!-- container for image/portrait and a image text underneath -->
         <figure>
-            <img src="/images/profilbild.jpg" />
-            <figcaption>Självporträtt</figcaption>
+            <img src="/images/profilbild.jpg" alt="Drawing, charcoal">
+            <figcaption>Self portrait</figcaption>
         </figure>
 
-        <!-- List-foundation for iterating info from an array with about-facts to render on the page -->
+        <!-- List-foundation: iterating info from array with about-facts to render on the page -->
         <ul class="factsList">
             <?php foreach ($facts as $key => $value): ?>
+                <!-- If statement: check if value euqals string or integer (to rule out those with a value of an array)-->
                 <?php if (is_string($value) || is_int($value)): ?>
                     <li>
                         <strong> <?= $key . ': ' ?> </strong> <?= $value; ?>
@@ -29,6 +30,7 @@ require_once __DIR__ . '/aboutData.php';
                         <strong> <?= $key . ': '; ?> </strong>
                     </li>
                     <li>
+                        <!-- nested foreach - fetch nested array -->
                         <?php foreach ($value as $nestedValues): ?>
                             <ul class="nestedFactsList">
                                 <li><?= $nestedValues; ?> </li>

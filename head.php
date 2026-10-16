@@ -22,19 +22,20 @@ require_once __DIR__ . '/data.php';
                     <a id="titleLogo" href="index.php">Some Teams</a>
                 </li>
                 <li>
+                    <!-- navigational links to the sites two pages -->
                     <div class="navLinks">
                         <a href="index.php">Home</a>
                         <a href="about.php">About</a>
                     </div>
                 </li>
             </ul>
-            <!-- list of all the team logos: displayed in navbar horizontally (links?) -->
+            <!-- list of all the team logos: displayed in navbar horizontally and made into links to each team info-page-->
             <ul class="logoLinkList">
                 <?php $i = 1; ?>
                 <?php foreach ($teams as $key => $value): ?>
                     <li>
                         <a id="<?php echo $i; ?> " href=" <?php echo 'info.php?id=' . $i; ?> ">
-                            <img src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
+                            <img src="<?= $teams[$key]['logo_uefa'] ?>" alt="uefa logo">
                         </a>
                     </li>
                     <?php $i++; ?>
