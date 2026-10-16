@@ -10,8 +10,8 @@ require_once __DIR__ . '/data.php';
     <?php foreach ($teams as $key => $value): ?>
         <?php if ($i == $id): ?>
             <div class='subHeader'>
-                <h1><?= $key; ?></h1>
-                <img class="infoImage " src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
+                <h1> <?= $key; ?> </h1>
+                <img class="infoImage" src="<?= $teams[$key]['logo_uefa'] ?>" alt="uefa logo">
             </div>
             <?php foreach ($value as $subKey => $subValue): ?>
                 <?php if (in_array($subKey, ['league', 'uefa-coefficient-ranking', 'league-position', 'city']) && $subValue != Null): ?>

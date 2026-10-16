@@ -28,7 +28,7 @@ require_once __DIR__ . '/data.php';
                 </li>
                 <li>
                     <a id="<?php echo $i; ?> " href=" <?php echo 'info.php?id=' . $i; ?> ">
-                        <img src='<?= $teams[$key]['logo_uefa'] ?>' alt="uefa logo" />
+                        <img src="<?= $teams[$key]['logo_uefa'] ?>" alt="uefa logo">
                     </a>
                 </li>
             </ul>
