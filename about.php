@@ -13,7 +13,7 @@ require_once __DIR__ . '/aboutData.php';
     <section class="factsContainer">
         <!-- container for image/portrait and a image text underneath -->
         <figure>
-            <img src="/images/profilbild.jpg" alt="Drawing, charcoal">
+            <img src="images/profilbild.jpg" alt="Drawing, charcoal">
             <figcaption>Self portrait</figcaption>
         </figure>
 
