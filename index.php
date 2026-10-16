@@ -15,17 +15,18 @@ require_once __DIR__ . '/data.php';
     </div>
     <!-- Container gathering all teams -->
     <section class="teamsContainer">
-        <!-- List item (set up to: Iterate and render home-page view of each team in parent-list)-->
-        <!-- nested list: containing team-info -->
+        <!-- Iterate and render home-page view of each team in list-->
         <?php $i = 1; ?>
         <?php foreach ($teams as $key => $value): ?>
             <ul class="teamItem">
                 <li class="headingLi">
-                    <!-- Heading: team name (retrieved from data.php)-->
+                    <!-- Heading: team name-->
                     <h2>
                         <?php echo $key; ?>
                     </h2>
                 </li>
+                <!-- Giving each iteration id and path to new side with more team-info -->
+                <!-- Fetch logo from data -> img -->
                 <li>
                     <a id="<?php echo $i; ?> " href=" <?php echo 'info.php?id=' . $i; ?> ">
                         <img src="<?= $teams[$key]['logo_uefa'] ?>" alt="uefa logo">
